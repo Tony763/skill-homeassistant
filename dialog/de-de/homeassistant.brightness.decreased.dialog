@@ -1,2 +1,2 @@
-Habe {dev_name} auf {brightness} Prozent gedimmt.
-Habe {dev_name} gedimmt.
+Habe {{dev_name}} auf {{brightness}} Prozent gedimmt.
+Habe {{dev_name}} gedimmt.

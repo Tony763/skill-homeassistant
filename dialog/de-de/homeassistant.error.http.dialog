@@ -1,1 +1,1 @@
-Der Home Assistant Server konnte aufgrund des folgenden Fehlers nicht antworten: {code} {reason}
+Der Home Assistant Server konnte aufgrund des folgenden Fehlers nicht antworten: {{code}} {{reason}}
