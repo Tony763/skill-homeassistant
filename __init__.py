@@ -212,7 +212,7 @@ class HomeAssistantSkill(FallbackSkill):
         message.data["Temp"] = message.data.get("temp")
         self._handle_set_thermostat(message)
 
-    @intent_file_handler('add.item.shopping.list.intent')
+    @intent_handler('add.item.shopping.list.intent')
     def handle_shopping_list_intent(self, message):
         self.log.debug("Add : "+message.data.get("entity")+"to the shoping list")
         message.data["Entity"] = message.data.get("entity")
