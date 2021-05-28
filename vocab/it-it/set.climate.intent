@@ -1,3 +1,1 @@
-imposta (|il |lo |la |l'){entity} a {temp} gradi
-imposta (|il |lo |la |l'){entity} alla temperatura di {temp} gradi
-cambia la temperatura di {entity} a {temp} gradi
+(cambia|imposta) (la|) (temperatura|) (di|del|della|degli|) {entity} (a|su) {temp} gradi
