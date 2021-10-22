@@ -7,7 +7,8 @@ on:
   push:
     branches-ignore:
       - gh-pages
-  pull_request:
+  pull_request_target:
+    types: [labeled]
     branches-ignore:
       - gh-pages
 
@@ -15,6 +16,10 @@ jobs:
   job-vm:
 
     runs-on: ubuntu-latest
+
+    # Run workflow only when triggered by push (to original repo) or RP from fork when labeled with "secure"
+    # Label will be removed at the end of execution
+    if: contains(github.event.pull_request.labels.*.name, 'secure') || ${{ github.event_name }} == "push"
 
     env:
         HASS_SERVER: http://127.0.0.1:8123
@@ -26,10 +31,30 @@ jobs:
         HA_VIRTUAL_VERSION: v0.7.2
 
     steps:
-    - uses: actions/checkout@v2
 
-    # Setup python
-    - name: Set up Python 3.7
+    # Use standard checkout if workflow triggered by push
+    - name: Github Actions | Running on commit workflow - push
+      uses: actions/checkout@v2
+      if: ${{ github.event_name }} == "push"
+
+    # Checkout to PR if workflow triggered by pull_request_target
+    - name: Github Actions | Running on commit workflow - pull_request
+      uses: actions/checkout@v2
+      with:
+        ref: ${{github.event.pull_request.head.ref}}
+        repository: ${{github.event.pull_request.head.repo.full_name}}
+      if: ${{ github.event_name }} == "pull_request_target"
+
+    # Remove label "secure" from PR - Prevent running workflow on another commit to PR
+    # After changes review, another run can be triggered by adding "secure" label again
+    - name: Github Actions | Remove secure label on PR
+      uses: actions-ecosystem/action-remove-labels@v1
+      with:
+        labels: 'secure'
+      if: ${{ github.event_name }} == "pull_request_target"
+
+
+    - name: Github Actions | Set up Python 3.7
       uses: actions/setup-python@v2
       with:
         python-version: 3.7
