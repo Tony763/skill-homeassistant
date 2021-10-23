@@ -32,6 +32,7 @@ ip_regex = r"".join(r'\b(?:https?://)?((?:(?:www\.)?(?:[\da-z\.-]+)\.(?:[a-z]{2,
                     r']))))(?::[0-9]{1,4}|[1-5][0-9]{4}|6[0-4][0-9]{3}|65[0-4][0-9]{'
                     r'2}|655[0-2][0-9]|6553[0-5])?(?:/[\w\.-]*)*/?\b')
 
+
 def check_url(ip):
     """Function to check if valid url/ip was supplied"""
     matches = re.search(ip_regex, ip)
