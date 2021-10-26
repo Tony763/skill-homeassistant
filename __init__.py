@@ -17,7 +17,6 @@ __author__ = 'robconnolly, btotharye, nielstron'
 # Timeout time for HA requests
 TIMEOUT = 10
 
-
 # pylint: disable=R0912, W0105, W0511, W0233
 class HomeAssistantSkill(FallbackSkill):
     """Main skill class"""
