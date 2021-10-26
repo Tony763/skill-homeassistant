@@ -91,6 +91,7 @@ class HomeAssistantSkill(FallbackSkill):
         self.settings_change_callback = self.on_websettings_changed
         self._setup()
 
+        
     def on_websettings_changed(self):
         """
         Force a setting refresh after the websettings changed
