@@ -1,3 +1,4 @@
 # Add label workflow when code changed in ./github
+# comment!
 workflow:
   - any: ['.github/**/*' ]
