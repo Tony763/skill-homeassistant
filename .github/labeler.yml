@@ -1,0 +1,3 @@
+
+workflow:
+- any: ['.github/*', '.github/**/*' ]
