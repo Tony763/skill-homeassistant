@@ -1,0 +1,10 @@
+2022-12-20 22:34:52.730 | INFO     |  4471 | __main__:main:50 | Starting message bus service...
+2022-12-20 22:34:52.730 | INFO     |  4471 | mycroft.messagebus.load_config:load_message_bus_config:33 | Loading message bus configs
+2022-12-20 22:34:52.756 | INFO     |  4471 | __main__:on_ready:37 | Message bus service started!
+2022-12-20 22:34:52.810 | INFO     |  4471 | tornado.access | 101 GET /core (127.0.0.1) 0.65ms
+2022-12-20 22:34:52.921 | INFO     |  4471 | tornado.access | 101 GET /core (127.0.0.1) 0.44ms
+2022-12-20 22:34:52.983 | INFO     |  4471 | tornado.access | 101 GET /core (127.0.0.1) 0.65ms
+2022-12-20 22:34:53.063 | INFO     |  4471 | tornado.access | 101 GET /core (127.0.0.1) 0.55ms
+2022-12-20 22:34:57.687 | INFO     |  4471 | tornado.access | 101 GET /core (127.0.0.1) 0.50ms
+2022-12-20 22:36:11.507 | INFO     |  4471 | tornado.access | 101 GET /core (127.0.0.1) 0.46ms
+2022-12-20 22:37:37.889 | INFO     |  4471 | __main__:on_stopping:45 | Message bus is shutting down...
