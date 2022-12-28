@@ -81,6 +81,33 @@ def check_url(ip_address: str) -> str:
     return None
 
 
+def _normalize_string(string: str) -> str:
+    """Normalize string for speak"""
+
+    if not isinstance(string, str):
+        # String is not string, skip normalization
+        return string
+
+    string = string.replace("|", ",")
+    return string
+
+
+def normalize_dialog(func) -> None:
+    """Decorator for dialog speak normalization"""
+
+    def norm(*args, **kwargs):
+        """Run normalization on all data"""
+
+        for kwargKey in kwargs.keys():
+            if kwargKey == 'data':
+                for key in kwargs[kwargKey]:
+                    kwargs[kwargKey][key] = _normalize_string(kwargs[kwargKey][key])
+
+        func(*args, **kwargs)
+
+    return norm
+
+
 # pylint: disable=R0912, W0105, W0511
 class HomeAssistantClient:
     """Home Assistant client class"""
