@@ -3,7 +3,8 @@ import os
 import unittest
 from unittest import TestCase, mock
 
-from ha_client import HomeAssistantClient, check_url
+from ha_client import (HomeAssistantClient, _normalize_string, check_url,
+                       normalize_dialog)
 
 kitchen_light = {'state': 'off', 'id': '1', 'dev_name': 'kitchen'}
 
@@ -295,6 +296,53 @@ class TestUrlChecker(TestCase):
             matches = check_url(address)
 
         self.assertEqual(matches, None)
+
+
+class TestAdditionalFunctions(TestCase):
+    """Base set of additional functions"""
+
+    def test_normalize_string(self):
+        """Test string normalizing function
+        Test cases contain in/out duos which should be equal"""
+        test_case = [
+            ['Battery | State of charge', 'Battery , State of charge'],
+            ['Bathroom light', 'Bathroom light'],
+        ]
+
+        # Run all test cases
+        for duo in test_case:
+            normalized = _normalize_string(duo[0])
+            self.assertEqual(normalized, duo[1])
+
+    def test_normalize_dialog(self) -> None:
+        """Test dialog normalizing function used as decorator.
+        Test cases contain in/out duos which should be equal"""
+        test_dialog = "sensor.state"
+        test_case = [
+            # test replace | to ,
+            [{"entity": 'Battery | State of charge'}, {"entity": 'Battery , State of charge'}],
+            # test int in value
+            [{"entity": 'Bathroom light', "val": 124}, {"entity": 'Bathroom light', "val": 124}],
+            # test empty dict
+            [{}, {}],
+            # test multiple keys
+            [{"entity": "Batt | Charge", "state": "3.7V , 2A"}, {"entity": "Batt , Charge", "state": "3.7V , 2A"}]
+
+        ]
+
+        @normalize_dialog
+        def _speak_dialog(dialog, data=None):
+            """Mock speak_dialog function"""
+
+            # Check dialog did not change
+            self.assertEqual(dialog, test_dialog)
+            # Check if first dialog in list was changed into second one
+            self.assertEqual(data, duo[1])
+
+        # Run all test cases
+        for duo in test_case:
+            # run mocked speak dialog with decorator
+            _speak_dialog(test_dialog, data=duo[0])
 
 
 if __name__ == '__main__':
