@@ -39,7 +39,7 @@ config = {'ip_address': '127.0.0.1',
 class TestHaClient(TestCase):
     """Base set of tests
 
-    These tests are from old days and originally runned on public
+    These tests are from old days and originally run on public
     instance of HA that no longer runs so mocking was added.
     """
 

@@ -23,7 +23,7 @@ TIMEOUT = 10
 
 
 def _get_nice_number(number: str) -> str:
-    """Convert number to nice formated number"""
+    """Convert number to nice formatted number"""
     try:
         return nice_number(float(number))
     except TypeError:
@@ -91,7 +91,7 @@ class HomeAssistantSkill(FallbackSkill):
             if self.ha_client.connected():
                 # Check if conversation component is loaded at HA-server
                 # and activate fallback accordingly (ha-server/api/components)
-                # TODO: enable other tools like dialogflow
+                # TODO: enable other tools like dialog flow
                 conversation_activated = self.ha_client.find_component(
                     'conversation'
                 )
@@ -143,7 +143,7 @@ class HomeAssistantSkill(FallbackSkill):
 
     def on_websettings_changed(self) -> None:
         """
-        Force a setting refresh after the websettings changed
+        Force a setting refresh after the web settings changed
         otherwise new settings will not be regarded.
         """
         self._force_setup()
@@ -330,7 +330,7 @@ class HomeAssistantSkill(FallbackSkill):
     @intent_handler('add.item.shopping.list.intent')
     def handle_shopping_list_intent(self, message: Message) -> None:
         """Handle add item to shopping list intent."""
-        self.log.debug("Add %s to the shoping list", message.data.get("entity"))
+        self.log.debug("Add %s to the shopping list", message.data.get("entity"))
         message.data["Entity"] = message.data.get("entity")
         self._handle_shopping_list(message)
 
@@ -400,7 +400,7 @@ class HomeAssistantSkill(FallbackSkill):
             ]
         )
 
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 
@@ -448,7 +448,7 @@ class HomeAssistantSkill(FallbackSkill):
         self.log.debug("Brightness Percent: %s", brightness_percentage)
 
         ha_entity = self._find_entity(entity, ['group', 'light'])
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 
@@ -524,7 +524,7 @@ class HomeAssistantSkill(FallbackSkill):
         entity = message.data["Entity"]
 
         ha_entity = self._find_entity(entity, ['cover'])
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 
@@ -616,7 +616,7 @@ class HomeAssistantSkill(FallbackSkill):
             return
 
     def _handle_automation(self, message: Message) -> None:
-        """Handler for triggering automations."""
+        """Handler for triggering automation."""
         entity = message.data["Entity"]
         self.log.debug("Entity: %s", entity)
         ha_entity = self._find_entity(
@@ -624,7 +624,7 @@ class HomeAssistantSkill(FallbackSkill):
             ['automation', 'scene', 'script']
         )
 
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 
@@ -682,7 +682,7 @@ class HomeAssistantSkill(FallbackSkill):
             ]
         )
 
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 
@@ -764,7 +764,7 @@ class HomeAssistantSkill(FallbackSkill):
         self.log.debug("Entity: %s", entity)
 
         ha_entity = self._find_entity(entity, ['device_tracker'])
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 
@@ -787,7 +787,7 @@ class HomeAssistantSkill(FallbackSkill):
         self.log.debug("Temperature: %s", temperature)
 
         ha_entity = self._find_entity(entity, ['climate'])
-        # Exit if entity not found or is unavailabe
+        # Exit if entity not found or is unavailable
         if not ha_entity or not self._check_availability(ha_entity):
             return
 

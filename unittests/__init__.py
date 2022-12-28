@@ -1,4 +1,4 @@
-"""Add parrent directory to python path - fix pylint error"""
+"""Add parent directory to python path - fix pylint error"""
 import os
 import sys
 
