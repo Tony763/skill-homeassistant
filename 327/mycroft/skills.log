@@ -1,0 +1,868 @@
+2023-01-12 22:54:43.338 | INFO     |  4416 | mycroft.messagebus.load_config:load_message_bus_config:33 | Loading message bus configs
+2023-01-12 22:54:43.342 | INFO     |  4416 | mycroft_bus_client.client.client | Connected
+2023-01-12 22:54:43.348 | INFO     |  4416 | mycroft.util.process_utils:start_message_bus_client:155 | Connected to messagebus
+2023-01-12 22:54:43.352 | INFO     |  4416 | mycroft.skills.msm_wrapper:create_msm:96 | Acquiring lock to instantiate MSM
+2023-01-12 22:54:44.108 | INFO     |  4416 | msm.mycroft_skills_manager | building SkillEntry objects for all skills
+2023-01-12 22:54:44.476 | INFO     |  4416 | mycroft.skills.msm_wrapper:create_msm:112 | Releasing MSM instantiation lock.
+2023-01-12 22:54:44.477 | INFO     |  4416 | mycroft.skills.skill_updater:_log_next_download_time:267 | Next scheduled skill update: 2023-01-12 22:54:43.476872
+2023-01-12 22:54:44.477 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-pairing
+2023-01-12 22:54:44.765 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:44.775 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-pairing
+2023-01-12 22:54:44.775 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:44.777 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-pairing.mycroftai
+2023-01-12 22:54:44.784 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-pairing.mycroftai/settings.json
+2023-01-12 22:54:44.794 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-pairing.mycroftai
+2023-01-12 22:54:44.795 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-pairing.mycroftai/settings.json
+2023-01-12 22:54:44.795 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-pairing.mycroftai loaded successfully
+2023-01-12 22:54:44.795 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-volume
+2023-01-12 22:54:45.205 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:45.216 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-volume
+2023-01-12 22:54:46.279 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-volume
+2023-01-12 22:54:46.280 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:46.281 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-volume.mycroftai
+2023-01-12 22:54:46.293 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-volume.mycroftai/settings.json
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib control.c:1528:(snd_ctl_open_noupdate) Invalid CTL default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib control.c:1528:(snd_ctl_open_noupdate) Invalid CTL default
+2023-01-12 22:54:46.394 | ERROR    |  4416 | VolumeSkill | Couldn't allocate mixer, ALSAAudioError('No such file or directory [default]')
+2023-01-12 22:54:49.399 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-volume.mycroftai
+2023-01-12 22:54:49.400 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-volume.mycroftai/settings.json
+2023-01-12 22:54:49.401 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-volume.mycroftai loaded successfully
+2023-01-12 22:54:49.401 | INFO     |  4416 | __main__:on_started:177 | Skills service is starting up.
+2023-01-12 22:54:49.492 | INFO     |  4416 | __main__:_update_system:154 | Attempting system update...
+2023-01-12 22:54:52.494 | INFO     |  4416 | mycroft.enclosure.display_manager:_write_data:70 | Display Manager is creating /tmp/mycroft/ipc/managers/disp_info
+2023-01-12 22:54:52.494 | INFO     |  4416 | __main__:_ensure_device_is_paired:133 | Device not paired, invoking the pairing skill
+2023-01-12 22:54:52.496 | INFO     |  4416 | __main__:on_alive:181 | Skills service is alive.
+2023-01-12 22:54:52.544 | INFO     |  4416 | msm.mycroft_skills_manager | building SkillEntry objects for all skills
+2023-01-12 22:54:52.792 | INFO     |  4416 | PairingSkill | Communicating account URL to user
+2023-01-12 22:54:52.939 | WARNING  |  4416 | msm.mycroft_skills_manager | No such default skill: mycroft-pandora
+2023-01-12 22:54:52.940 | INFO     |  4416 | mycroft.skills.skill_manager:run:234 | Not all default skills are installed, performing skill update...
+2023-01-12 22:54:52.940 | INFO     |  4416 | mycroft.skills.skill_updater:update_skills:149 | Beginning skill update...
+2023-01-12 22:54:53.031 | INFO     |  4416 | msm.mycroft_skills_manager | building SkillEntry objects for all skills
+2023-01-12 22:54:53.253 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:53.424 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/fallback-unknown
+2023-01-12 22:54:53.428 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-alarm
+2023-01-12 22:54:53.429 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/fallback-wolfram-alpha
+2023-01-12 22:54:53.450 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-date-time
+2023-01-12 22:54:53.455 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-audio-record
+2023-01-12 22:54:53.459 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-configuration
+2023-01-12 22:54:53.465 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/fallback-duckduckgo
+2023-01-12 22:54:53.470 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-hello-world
+2023-01-12 22:54:53.477 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-installer
+2023-01-12 22:54:53.478 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-joke
+2023-01-12 22:54:53.485 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-naptime
+2023-01-12 22:54:53.491 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-npr-news
+2023-01-12 22:54:53.494 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-ip
+2023-01-12 22:54:53.506 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-personal
+2023-01-12 22:54:53.515 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-playback-control
+2023-01-12 22:54:53.525 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-reminder
+2023-01-12 22:54:53.529 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-singing
+2023-01-12 22:54:54.727 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:54.821 | INFO     |  4416 | msm.skill_entry | Successfully installed fallback-unknown
+2023-01-12 22:54:54.821 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:54.822 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-speak
+2023-01-12 22:54:54.870 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:54.931 | INFO     |  4416 | msm.skill_entry | Nothing new for mycroft-pairing
+2023-01-12 22:54:54.942 | ERROR    |  4416 | msm.mycroft_skills_manager | Error running install_or_update on homeassistant.mycroftai: MergeConflict
+2023-01-12 22:54:54.944 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:54.965 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-spelling
+2023-01-12 22:54:54.981 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for fallback-wolfram-alpha
+2023-01-12 22:54:55.002 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-stop
+2023-01-12 22:54:55.385 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.400 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.503 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-date-time
+2023-01-12 22:54:55.504 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-hello-world
+2023-01-12 22:54:55.504 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:55.505 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-support
+2023-01-12 22:54:55.627 | INFO     |  4416 | msm.skill_entry | Nothing new for mycroft-volume
+2023-01-12 22:54:55.678 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.708 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.709 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.730 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.736 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.768 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.884 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.938 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.949 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:55.958 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-fallback-duck-duck-go
+2023-01-12 22:54:55.985 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-audio-record
+2023-01-12 22:54:55.986 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-naptime
+2023-01-12 22:54:55.986 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:55.988 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/mycroft-timer
+2023-01-12 22:54:56.000 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-joke
+2023-01-12 22:54:56.001 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.004 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-ip
+2023-01-12 22:54:56.008 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.027 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-installer
+2023-01-12 22:54:56.028 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.047 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.053 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.104 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.115 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-volume
+2023-01-12 22:54:56.129 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-spelling
+2023-01-12 22:54:56.129 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:56.131 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-weather
+2023-01-12 22:54:56.131 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-stop
+2023-01-12 22:54:56.131 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:56.132 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-version-checker
+2023-01-12 22:54:56.148 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-speak
+2023-01-12 22:54:56.149 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:56.150 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/mycroftai/skill-wiki
+2023-01-12 22:54:56.186 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-personal
+2023-01-12 22:54:56.186 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:56.188 | INFO     |  4416 | msm.skill_entry | Downloading skill: https://github.com/MycroftAI/skill-query
+2023-01-12 22:54:56.193 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-reminder
+2023-01-12 22:54:56.194 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:56.212 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-configuration
+2023-01-12 22:54:56.214 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-playback-control
+2023-01-12 22:54:56.215 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:56.267 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-npr-news
+2023-01-12 22:54:56.276 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.420 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-alarm
+2023-01-12 22:54:56.670 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:56.710 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-support-helper
+2023-01-12 22:54:56.833 | ERROR    |  4416 | msm.mycroft_skills_manager | Error running install_or_update on homeassistant: MergeConflict
+2023-01-12 22:54:56.921 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:57.030 | INFO     |  4416 | msm.skill_entry | Successfully installed fallback-query
+2023-01-12 22:54:57.030 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:57.055 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:57.135 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-wiki
+2023-01-12 22:54:57.159 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:57.241 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-version-checker
+2023-01-12 22:54:57.242 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:57.393 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:57.448 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-timer
+2023-01-12 22:54:57.448 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:57.517 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:57.546 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-singing
+2023-01-12 22:54:57.546 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:54:57.555 | INFO     |  4416 | msm.skill_entry | Installing system requirements...
+2023-01-12 22:54:57.583 | INFO     |  4416 | msm.skill_entry | Installing requirements.txt for mycroft-weather
+2023-01-12 22:54:59.970 | INFO     |  4416 | msm.skill_entry | Successfully installed fallback-wolfram-alpha
+2023-01-12 22:54:59.971 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:17.809 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-date-time
+2023-01-12 22:55:17.809 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:19.035 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-fallback-duck-duck-go
+2023-01-12 22:55:19.035 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:20.010 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-audio-record
+2023-01-12 22:55:20.010 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:21.229 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-joke
+2023-01-12 22:55:21.229 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:22.122 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-ip
+2023-01-12 22:55:22.123 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:23.117 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-installer
+2023-01-12 22:55:23.117 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:23.127 | INFO     |  4416 | PairingSkill | Initiating device pairing sequence...
+2023-01-12 22:55:23.128 | INFO     |  4416 | PairingSkill | Retrieving pairing code from device API...
+2023-01-12 22:55:23.485 | INFO     |  4416 | PairingSkill | Pairing code obtained: C9ALJY
+2023-01-12 22:55:23.486 | INFO     |  4416 | PairingSkill | Communicating pairing URL to user
+2023-01-12 22:55:26.999 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-configuration
+2023-01-12 22:55:26.999 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:31.054 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-npr-news
+2023-01-12 22:55:31.054 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:31.989 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-alarm
+2023-01-12 22:55:31.989 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:34.675 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-support-helper
+2023-01-12 22:55:34.676 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:38.401 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-wiki
+2023-01-12 22:55:38.401 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:40.490 | INFO     |  4416 | msm.skill_entry | Successfully installed mycroft-weather
+2023-01-12 22:55:40.490 | INFO     |  4416 | msm.mycroft_skills_manager | invalidating skills cache
+2023-01-12 22:55:40.533 | INFO     |  4416 | mycroft.skills.skill_updater:_log_next_download_time:267 | Next scheduled skill update: 2023-01-12 23:55:40.533260
+2023-01-12 22:55:40.534 | INFO     |  4416 | mycroft.skills.skill_updater:update_skills:170 | Skill update complete
+2023-01-12 22:55:40.534 | INFO     |  4416 | mycroft.skills.skill_manager:_load_on_startup:273 | Loading installed skills...
+2023-01-12 22:55:40.535 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-timer.mycroftai
+2023-01-12 22:55:40.549 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-timer.mycroftai/settings.json
+2023-01-12 22:55:40.585 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-timer.mycroftai
+2023-01-12 22:55:40.585 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-timer.mycroftai/settings.json
+2023-01-12 22:55:40.591 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-timer.mycroftai loaded successfully
+2023-01-12 22:55:40.592 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-wiki.mycroftai
+2023-01-12 22:55:40.720 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-wiki.mycroftai/settings.json
+2023-01-12 22:55:40.730 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-wiki.mycroftai
+2023-01-12 22:55:40.731 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-wiki.mycroftai/settings.json
+2023-01-12 22:55:40.732 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-wiki.mycroftai loaded successfully
+2023-01-12 22:55:40.732 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-configuration.mycroftai
+2023-01-12 22:55:40.737 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-configuration.mycroftai/settings.json
+2023-01-12 22:55:40.756 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-configuration.mycroftai
+2023-01-12 22:55:40.757 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-configuration.mycroftai/settings.json
+2023-01-12 22:55:40.758 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-configuration.mycroftai loaded successfully
+2023-01-12 22:55:40.759 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-stop.mycroftai
+2023-01-12 22:55:40.762 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-stop.mycroftai/settings.json
+2023-01-12 22:55:40.771 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-stop.mycroftai
+2023-01-12 22:55:40.772 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-stop.mycroftai/settings.json
+2023-01-12 22:55:40.773 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-stop.mycroftai loaded successfully
+2023-01-12 22:55:40.774 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-reminder.mycroftai
+2023-01-12 22:55:40.783 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-reminder.mycroftai/settings.json
+2023-01-12 22:55:40.800 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-reminder.mycroftai
+2023-01-12 22:55:40.801 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-reminder.mycroftai/settings.json
+2023-01-12 22:55:40.801 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-reminder.mycroftai loaded successfully
+2023-01-12 22:55:40.801 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: fallback-wolfram-alpha.mycroftai
+2023-01-12 22:55:40.888 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/fallback-wolfram-alpha.mycroftai/settings.json
+2023-01-12 22:55:40.912 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of fallback-wolfram-alpha.mycroftai
+2023-01-12 22:55:40.916 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/fallback-wolfram-alpha.mycroftai/settings.json
+2023-01-12 22:55:40.919 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill fallback-wolfram-alpha.mycroftai loaded successfully
+2023-01-12 22:55:40.919 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-weather.mycroftai
+2023-01-12 22:55:40.946 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-weather.mycroftai/settings.json
+2023-01-12 22:55:41.053 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-weather.mycroftai
+2023-01-12 22:55:41.054 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-weather.mycroftai/settings.json
+2023-01-12 22:55:41.056 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-weather.mycroftai loaded successfully
+2023-01-12 22:55:41.056 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-fallback-duck-duck-go.mycroftai
+2023-01-12 22:55:41.078 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-fallback-duck-duck-go.mycroftai/settings.json
+2023-01-12 22:55:41.101 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-fallback-duck-duck-go.mycroftai
+2023-01-12 22:55:41.102 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-fallback-duck-duck-go.mycroftai/settings.json
+2023-01-12 22:55:41.103 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-fallback-duck-duck-go.mycroftai loaded successfully
+2023-01-12 22:55:41.104 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-ip.mycroftai
+2023-01-12 22:55:41.200 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-ip.mycroftai/settings.json
+2023-01-12 22:55:41.228 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-ip.mycroftai
+2023-01-12 22:55:41.229 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-ip.mycroftai/settings.json
+2023-01-12 22:55:41.231 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-ip.mycroftai loaded successfully
+2023-01-12 22:55:41.232 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-alarm.mycroftai
+2023-01-12 22:55:41.278 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-alarm.mycroftai/settings.json
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib control.c:1528:(snd_ctl_open_noupdate) Invalid CTL default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib control.c:1528:(snd_ctl_open_noupdate) Invalid CTL default
+2023-01-12 22:55:41.281 | ERROR    |  4416 | AlarmSkill | Couldn't allocate mixer, ALSAAudioError('No such file or directory [default]')
+2023-01-12 22:55:41.388 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-alarm.mycroftai
+2023-01-12 22:55:41.390 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-alarm.mycroftai/settings.json
+2023-01-12 22:55:41.396 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-alarm.mycroftai loaded successfully
+2023-01-12 22:55:41.397 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: fallback-unknown.mycroftai
+2023-01-12 22:55:41.406 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/fallback-unknown.mycroftai/settings.json
+2023-01-12 22:55:41.427 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of fallback-unknown.mycroftai
+2023-01-12 22:55:41.429 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/fallback-unknown.mycroftai/settings.json
+2023-01-12 22:55:41.431 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill fallback-unknown.mycroftai loaded successfully
+2023-01-12 22:55:41.431 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-singing.mycroftai
+2023-01-12 22:55:41.434 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-singing.mycroftai/settings.json
+2023-01-12 22:55:41.458 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-singing.mycroftai
+2023-01-12 22:55:41.459 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-singing.mycroftai/settings.json
+2023-01-12 22:55:41.465 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-singing.mycroftai loaded successfully
+2023-01-12 22:55:41.465 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-version-checker.mycroftai
+2023-01-12 22:55:41.481 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-version-checker.mycroftai/settings.json
+2023-01-12 22:55:41.511 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-version-checker.mycroftai
+2023-01-12 22:55:41.512 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-version-checker.mycroftai/settings.json
+2023-01-12 22:55:41.514 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-version-checker.mycroftai loaded successfully
+2023-01-12 22:55:41.515 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-playback-control.mycroftai
+2023-01-12 22:55:41.521 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-playback-control.mycroftai/settings.json
+2023-01-12 22:55:41.545 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-playback-control.mycroftai
+2023-01-12 22:55:41.545 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-playback-control.mycroftai/settings.json
+2023-01-12 22:55:41.546 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-playback-control.mycroftai loaded successfully
+2023-01-12 22:55:41.546 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-spelling.mycroftai
+2023-01-12 22:55:41.550 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-spelling.mycroftai/settings.json
+2023-01-12 22:55:41.562 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-spelling.mycroftai
+2023-01-12 22:55:41.564 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-spelling.mycroftai/settings.json
+2023-01-12 22:55:41.565 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-spelling.mycroftai loaded successfully
+2023-01-12 22:55:41.565 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-speak.mycroftai
+2023-01-12 22:55:41.568 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-speak.mycroftai/settings.json
+2023-01-12 22:55:41.579 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-speak.mycroftai
+2023-01-12 22:55:41.579 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-speak.mycroftai/settings.json
+2023-01-12 22:55:41.581 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-speak.mycroftai loaded successfully
+2023-01-12 22:55:41.581 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-hello-world.mycroftai
+2023-01-12 22:55:41.584 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-hello-world.mycroftai/settings.json
+2023-01-12 22:55:41.600 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-hello-world.mycroftai
+2023-01-12 22:55:41.601 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-hello-world.mycroftai/settings.json
+2023-01-12 22:55:41.603 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-hello-world.mycroftai loaded successfully
+2023-01-12 22:55:41.603 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-installer.mycroftai
+2023-01-12 22:55:41.619 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-installer.mycroftai/settings.json
+2023-01-12 22:55:41.648 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-installer.mycroftai
+2023-01-12 22:55:41.649 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-installer.mycroftai/settings.json
+2023-01-12 22:55:41.653 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-installer.mycroftai loaded successfully
+2023-01-12 22:55:41.653 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-naptime.mycroftai
+2023-01-12 22:55:41.657 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-naptime.mycroftai/settings.json
+2023-01-12 22:55:41.682 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-naptime.mycroftai
+2023-01-12 22:55:41.684 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-naptime.mycroftai/settings.json
+2023-01-12 22:55:41.685 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-naptime.mycroftai loaded successfully
+2023-01-12 22:55:41.686 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-npr-news.mycroftai
+2023-01-12 22:55:41.790 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-npr-news.mycroftai/settings.json
+2023-01-12 22:55:42.820 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-npr-news.mycroftai
+2023-01-12 22:55:42.821 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-npr-news.mycroftai/settings.json
+2023-01-12 22:55:42.822 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-npr-news.mycroftai loaded successfully
+2023-01-12 22:55:42.824 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-audio-record.mycroftai
+2023-01-12 22:55:42.828 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-audio-record.mycroftai/settings.json
+2023-01-12 22:55:42.844 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-audio-record.mycroftai
+2023-01-12 22:55:42.848 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-audio-record.mycroftai/settings.json
+2023-01-12 22:55:42.851 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-audio-record.mycroftai loaded successfully
+2023-01-12 22:55:42.853 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-date-time.mycroftai
+2023-01-12 22:55:43.157 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-date-time.mycroftai/settings.json
+2023-01-12 22:55:43.201 | INFO     |  4416 | TimeSkill | Registering resting screen <bound method TimeSkill.handle_idle of <mycroft-date-time_mycroftai.TimeSkill object at 0x7f3b9c46ae10>> for Time and Date.
+2023-01-12 22:55:43.204 | INFO     |  4416 | TimeSkill | Registering resting screen
+2023-01-12 22:55:43.212 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-date-time.mycroftai
+2023-01-12 22:55:43.215 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-date-time.mycroftai/settings.json
+2023-01-12 22:55:43.216 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-date-time.mycroftai loaded successfully
+2023-01-12 22:55:43.219 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: homeassistant.mycroftai
+2023-01-12 22:55:43.406 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/homeassistant.mycroftai/settings.json
+2023-01-12 22:55:43.407 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/homeassistant.mycroftai/settings.json
+2023-01-12 22:55:43.507 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill homeassistant.mycroftai loaded successfully
+2023-01-12 22:55:43.507 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: fallback-query.mycroftai
+2023-01-12 22:55:43.511 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/fallback-query.mycroftai/settings.json
+2023-01-12 22:55:43.535 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of fallback-query.mycroftai
+2023-01-12 22:55:43.536 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/fallback-query.mycroftai/settings.json
+2023-01-12 22:55:43.536 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill fallback-query.mycroftai loaded successfully
+2023-01-12 22:55:43.537 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-joke.mycroftai
+2023-01-12 22:55:43.542 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-joke.mycroftai/settings.json
+2023-01-12 22:55:43.573 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-joke.mycroftai
+2023-01-12 22:55:43.573 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-joke.mycroftai/settings.json
+2023-01-12 22:55:43.574 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-joke.mycroftai loaded successfully
+2023-01-12 22:55:43.574 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-support-helper.mycroftai
+2023-01-12 22:55:43.584 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-support-helper.mycroftai/settings.json
+2023-01-12 22:55:43.590 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-support-helper.mycroftai
+2023-01-12 22:55:43.591 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-support-helper.mycroftai/settings.json
+2023-01-12 22:55:43.593 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-support-helper.mycroftai loaded successfully
+2023-01-12 22:55:43.593 | INFO     |  4416 | mycroft.skills.skill_loader:load:185 | ATTEMPTING TO LOAD SKILL: mycroft-personal.mycroftai
+2023-01-12 22:55:43.597 | INFO     |  4416 | mycroft.skills.settings:get_local_settings:83 | /opt/mycroft/skills/mycroft-personal.mycroftai/settings.json
+2023-01-12 22:55:43.624 | INFO     |  4416 | mycroft.skills.skill_loader:_check_for_first_run:324 | First run of mycroft-personal.mycroftai
+2023-01-12 22:55:43.625 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-personal.mycroftai/settings.json
+2023-01-12 22:55:43.628 | INFO     |  4416 | mycroft.skills.skill_loader:_communicate_load_status:344 | Skill mycroft-personal.mycroftai loaded successfully
+2023-01-12 22:55:43.628 | INFO     |  4416 | mycroft.skills.skill_manager:_load_on_startup:275 | Skills all loaded!
+2023-01-12 22:55:43.672 | INFO     |  4416 | mycroft.skills.intent_services.padatious_service:train:151 | Training... (single_thread=False)
+2023-01-12 22:55:43.690 | INFO     |  4416 | __main__:on_ready:185 | Skills service is ready.
+Regenerated mycroft-alarm.mycroftai:{daytype}.
+Regenerated homeassistant.mycroftai:{tracker}.
+Regenerated mycroft-timer.mycroftai:start.timer.intent.
+Regenerated mycroft-timer.mycroftai:timer.status.intent.
+Regenerated mycroft-wiki.mycroftai:Random.intent.
+Regenerated mycroft-configuration.mycroftai:DisablePreciseDev.intent.
+Regenerated mycroft-configuration.mycroftai:EnablePreciseDev.intent.
+Regenerated mycroft-configuration.mycroftai:WhereAreYou.intent.
+Regenerated mycroft-stop.mycroftai:reboot.intent.
+Regenerated mycroft-stop.mycroftai:shutdown.intent.
+Regenerated mycroft-reminder.mycroftai:ClearReminders.intent.
+Regenerated mycroft-reminder.mycroftai:Reminder.intent.
+Regenerated mycroft-reminder.mycroftai:SnoozeReminder.intent.
+Regenerated mycroft-reminder.mycroftai:GetRemindersForDay.intent.
+Regenerated mycroft-weather.mycroftai:do-i-need-an-umbrella.intent.
+Regenerated mycroft-alarm.mycroftai:change.alarm.sound.intent.
+Regenerated mycroft-alarm.mycroftai:snooze.intent.
+Regenerated mycroft-hello-world.mycroftai:HowAreYou.intent.
+Regenerated mycroft-audio-record.mycroftai:StartRecording.intent.
+Regenerated mycroft-audio-record.mycroftai:PlayRecording.intent.
+Regenerated mycroft-date-time.mycroftai:what.time.is.it.intent.
+Regenerated mycroft-date-time.mycroftai:what.time.will.it.be.intent.
+Regenerated mycroft-date-time.mycroftai:date.future.weekend.intent.
+Regenerated mycroft-date-time.mycroftai:date.last.weekend.intent.
+Regenerated homeassistant.mycroftai:show.camera.image.intent.
+Regenerated homeassistant.mycroftai:automation.intent.
+Regenerated homeassistant.mycroftai:decrease.light.brightness.intent.
+Regenerated homeassistant.mycroftai:set.climate.intent.
+Regenerated homeassistant.mycroftai:toggle.intent.
+Regenerated homeassistant.mycroftai:close.intent.
+Regenerated homeassistant.mycroftai:stop.intent.
+Regenerated mycroft-support-helper.mycroftai:contact.support.intent.
+Regenerated mycroft-personal.mycroftai:WhoMadeYou.intent.
+Regenerated mycroft-personal.mycroftai:WhenWereYouBorn.intent.
+Regenerated mycroft-personal.mycroftai:WhoAreYou.intent.
+Regenerated mycroft-personal.mycroftai:DoYouRhyme.intent.
+Regenerated mycroft-personal.mycroftai:WhereWereYouBorn.intent.
+Regenerated mycroft-personal.mycroftai:DoYouDream.intent.
+Regenerated mycroft-personal.mycroftai:WhatAreYou.intent.
+Regenerated mycroft-stop.mycroftai:wifi.setup.intent.
+Regenerated mycroft-stop.mycroftai:ssh.enable.intent.
+Regenerated mycroft-stop.mycroftai:ssh.disable.intent.
+Regenerated mycroft-reminder.mycroftai:DeleteReminderForDay.intent.
+Regenerated mycroft-reminder.mycroftai:CancelActiveReminder.intent.
+Regenerated mycroft-reminder.mycroftai:ReminderAt.intent.
+Regenerated mycroft-reminder.mycroftai:GetNextReminders.intent.
+Regenerated mycroft-reminder.mycroftai:UnspecifiedReminderAt.intent.
+Regenerated mycroft-installer.mycroftai:list.skills.intent.
+Regenerated mycroft-installer.mycroftai:remove.intent.
+Regenerated mycroft-installer.mycroftai:is.installed.intent.
+Regenerated mycroft-installer.mycroftai:install.custom.intent.
+Regenerated mycroft-installer.mycroftai:install.intent.
+Regenerated mycroft-installer.mycroftai:install.beta.intent.
+Regenerated mycroft-naptime.mycroftai:wake-up.intent.
+Regenerated mycroft-npr-news.mycroftai:PlayTheNews.intent.
+Regenerated homeassistant.mycroftai:sensor.intent.
+Regenerated homeassistant.mycroftai:set.light.brightness.intent.
+Regenerated homeassistant.mycroftai:increase.light.brightness.intent.
+Regenerated homeassistant.mycroftai:turn.off.intent.
+Regenerated homeassistant.mycroftai:turn.on.intent.
+Regenerated homeassistant.mycroftai:add.item.shopping.list.intent.
+Regenerated homeassistant.mycroftai:open.intent.
+Regenerated homeassistant.mycroftai:tracker.intent.
+2023-01-12 22:55:46.889 | INFO     |  4416 | mycroft.skills.intent_services.padatious_service:train:153 | Training complete.
+2023-01-12 22:55:51.802 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 281, in handle_sensor_intent
+    self._handle_sensor(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 746, in _handle_sensor
+    "dev_name": normalize_entity(sensor_name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:55:52.104 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-timer.mycroftai/settings.json
+2023-01-12 22:55:53.831 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-pairing.mycroftai/settings.json
+2023-01-12 22:56:01.375 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 281, in handle_sensor_intent
+    self._handle_sensor(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 746, in _handle_sensor
+    "dev_name": normalize_entity(sensor_name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:56:11.679 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 281, in handle_sensor_intent
+    self._handle_sensor(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 715, in _handle_sensor
+    self._dialog_sensor_climate(sensor_name, sensor_state, attributes)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 664, in _dialog_sensor_climate
+    "dev_name": normalize_entity(name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:56:21.980 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 281, in handle_sensor_intent
+    self._handle_sensor(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 715, in _handle_sensor
+    self._dialog_sensor_climate(sensor_name, sensor_state, attributes)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 664, in _dialog_sensor_climate
+    "dev_name": normalize_entity(name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:56:32.322 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 237, in handle_turn_on_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:56:40.374 | WARNING  |  4416 | ConfigurationSkill | Impossible to update configuration because device isn't paired
+2023-01-12 22:56:42.629 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 237, in handle_turn_on_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:56:52.932 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 274, in handle_toggle_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 425, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:57:03.234 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 274, in handle_toggle_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 425, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:57:13.540 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 274, in handle_toggle_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 425, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:57:23.839 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 274, in handle_toggle_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 425, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:57:34.141 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 245, in handle_turn_off_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:57:40.457 | WARNING  |  4416 | ConfigurationSkill | Impossible to update configuration because device isn't paired
+2023-01-12 22:57:44.441 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 245, in handle_turn_off_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:57:54.753 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 237, in handle_turn_on_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:58:05.054 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 237, in handle_turn_on_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:58:15.319 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 290, in handle_light_set_intent
+    self._handle_light_set(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 463, in _handle_light_set
+    ha_data['dev_name'] = normalize_entity(ha_entity['dev_name'])
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:58:25.620 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 290, in handle_light_set_intent
+    self._handle_light_set(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 463, in _handle_light_set
+    ha_data['dev_name'] = normalize_entity(ha_entity['dev_name'])
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:58:35.922 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 298, in handle_light_increase_intent
+    self._handle_light_adjust(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 610, in _handle_light_adjust
+    ha_data['dev_name'] = normalize_entity(ha_entity['dev_name'])
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:58:40.532 | WARNING  |  4416 | ConfigurationSkill | Impossible to update configuration because device isn't paired
+2023-01-12 22:58:46.220 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 298, in handle_light_increase_intent
+    self._handle_light_adjust(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 610, in _handle_light_adjust
+    ha_data['dev_name'] = normalize_entity(ha_entity['dev_name'])
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:58:56.525 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 306, in handle_light_decrease_intent
+    self._handle_light_adjust(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 588, in _handle_light_adjust
+    ha_data['dev_name'] = normalize_entity(ha_entity['dev_name'])
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:59:06.826 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 306, in handle_light_decrease_intent
+    self._handle_light_adjust(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 588, in _handle_light_adjust
+    ha_data['dev_name'] = normalize_entity(ha_entity['dev_name'])
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:59:17.170 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 245, in handle_turn_off_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:59:27.474 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 245, in handle_turn_off_intent
+    self._handle_turn_actions(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 428, in _handle_turn_actions
+    data=normalize_entity(ha_entity))
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:59:37.733 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 313, in handle_automation_intent
+    self._handle_automation(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 640, in _handle_automation
+    data={"dev_name": normalize_entity(ha_entity['dev_name'])})
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:59:40.594 | WARNING  |  4416 | ConfigurationSkill | Impossible to update configuration because device isn't paired
+2023-01-12 22:59:48.035 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 313, in handle_automation_intent
+    self._handle_automation(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 640, in _handle_automation
+    data={"dev_name": normalize_entity(ha_entity['dev_name'])})
+NameError: name 'normalize_entity' is not defined
+2023-01-12 22:59:58.327 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 313, in handle_automation_intent
+    self._handle_automation(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 643, in _handle_automation
+    data={"dev_name": normalize_entity(ha_entity['dev_name'])})
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:00:08.630 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 313, in handle_automation_intent
+    self._handle_automation(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 643, in _handle_automation
+    data={"dev_name": normalize_entity(ha_entity['dev_name'])})
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:00:18.939 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 281, in handle_sensor_intent
+    self._handle_sensor(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 746, in _handle_sensor
+    "dev_name": normalize_entity(sensor_name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:00:29.240 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 281, in handle_sensor_intent
+    self._handle_sensor(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 746, in _handle_sensor
+    "dev_name": normalize_entity(sensor_name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:00:39.589 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 320, in handle_tracker_intent
+    self._handle_tracker(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 778, in _handle_tracker
+    data={'dev_name': normalize_entity(dev_name),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:00:39.958 | INFO     |  4416 | QuestionsAnswersSkill | Searching for give me location of the Czech Republic
+2023-01-12 23:00:40.004 | INFO     |  4416 | WolframAlphaSkill | WolframAlpha query: give me location of the Czech Republic
+2023-01-12 23:00:40.005 | INFO     |  4416 | WolframAlphaSkill | Non-question, ignoring: give me location of the Czech Republic
+2023-01-12 23:00:40.006 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/fallback-wolfram-alpha.mycroftai/settings.json
+2023-01-12 23:00:40.007 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-fallback-duck-duck-go.mycroftai/settings.json
+2023-01-12 23:00:40.010 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/fallback-query.mycroftai/settings.json
+2023-01-12 23:00:41.011 | WARNING  |  4416 | ConfigurationSkill | Impossible to update configuration because device isn't paired
+2023-01-12 23:00:41.438 | INFO     |  4416 | QuestionsAnswersSkill | Timeout occured check responses
+2023-01-12 23:00:41.974 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 320, in handle_tracker_intent
+    self._handle_tracker(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 766, in _handle_tracker
+    ha_entity = self._find_entity(entity, ['device_tracker'])
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 171, in _find_entity
+    "dev_name": normalize_entity(entity)})
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:00:50.258 | INFO     |  4416 | QuestionsAnswersSkill | Searching for where is France
+2023-01-12 23:00:50.263 | INFO     |  4416 | WolframAlphaSkill | WolframAlpha query: where is France
+2023-01-12 23:00:50.422 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Wolfram Alpha Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft-core/mycroft/skills/common_query_skill.py", line 108, in __handle_question_query
+    match = result[0]
+TypeError: 'bool' object is not subscriptable
+2023-01-12 23:00:50.423 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Pairing Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/mycroft-pairing.mycroftai/__init__.py", line 108, in not_paired
+    self.handle_pairing()
+TypeError: handle_pairing() missing 1 required positional argument: '_'
+2023-01-12 23:01:00.258 | INFO     |  4416 | UnknownSkill | Fallback type: question
+2023-01-12 23:01:00.462 | INFO     |  4416 | QuestionsAnswersSkill | Timeout occured check responses
+2023-01-12 23:01:00.577 | INFO     |  4416 | QuestionsAnswersSkill | Searching for where is the golden gate bridge
+2023-01-12 23:01:00.620 | INFO     |  4416 | WolframAlphaSkill | WolframAlpha query: where is the golden gate bridge
+2023-01-12 23:01:00.786 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Pairing Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/mycroft-pairing.mycroftai/__init__.py", line 108, in not_paired
+    self.handle_pairing()
+TypeError: handle_pairing() missing 1 required positional argument: '_'
+2023-01-12 23:01:00.788 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Wolfram Alpha Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft-core/mycroft/skills/common_query_skill.py", line 108, in __handle_question_query
+    match = result[0]
+TypeError: 'bool' object is not subscriptable
+2023-01-12 23:01:10.477 | INFO     |  4416 | QuestionsAnswersSkill | Timeout occured check responses
+2023-01-12 23:01:10.585 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 320, in handle_tracker_intent
+    self._handle_tracker(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 766, in _handle_tracker
+    ha_entity = self._find_entity(entity, ['device_tracker'])
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 171, in _find_entity
+    "dev_name": normalize_entity(entity)})
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:01:10.974 | ERROR    |  4416 | WeatherSkill | Weather API failure
+Traceback (most recent call last):
+  File "/opt/mycroft/skills/mycroft-weather.mycroftai/__init__.py", line 1133, in _get_weather
+    self.config_core.get("system_unit"), latitude, longitude, self.lang
+  File "/opt/mycroft/skills/mycroft-weather.mycroftai/skill/api.py", line 127, in get_weather_for_coordinates
+    response = self.request(api_request)
+  File "/opt/mycroft-core/mycroft/api/__init__.py", line 64, in request
+    return self.send(params)
+  File "/opt/mycroft-core/mycroft/api/__init__.py", line 147, in send
+    return self.get_response(response, no_refresh)
+  File "/opt/mycroft-core/mycroft/api/__init__.py", line 170, in get_response
+    raise HTTPError(data, response=response)
+requests.exceptions.HTTPError: {'error': 'device not authorized'}
+2023-01-12 23:01:10.975 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-weather.mycroftai/settings.json
+2023-01-12 23:01:10.978 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Pairing Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/mycroft-pairing.mycroftai/__init__.py", line 108, in not_paired
+    self.handle_pairing()
+TypeError: handle_pairing() missing 1 required positional argument: '_'
+2023-01-12 23:01:21.142 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 328, in handle_set_thermostat_intent
+    self._handle_set_thermostat(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 808, in _handle_set_thermostat
+    "dev_name": normalize_entity(climate_attr['name']),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:01:31.444 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 328, in handle_set_thermostat_intent
+    self._handle_set_thermostat(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 808, in _handle_set_thermostat
+    "dev_name": normalize_entity(climate_attr['name']),
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:01:40.158 | WARNING  |  4416 | ConfigurationSkill | Impossible to update configuration because device isn't paired
+2023-01-12 23:01:41.730 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 335, in handle_shopping_list_intent
+    self._handle_shopping_list(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 473, in _handle_shopping_list
+    ha_data = {'name': normalize_entity(entity)}
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:01:52.034 | ERROR    |  4416 | mycroft.skills.mycroft_skill.mycroft_skill:on_error:923 | An error occurred while processing a request in Home Assistant Skill
+Traceback (most recent call last):
+  File "/opt/mycroft-core/mycroft/skills/mycroft_skill/event_container.py", line 73, in wrapper
+    handler(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 335, in handle_shopping_list_intent
+    self._handle_shopping_list(message)
+  File "/opt/mycroft/skills/homeassistant.mycroftai/__init__.py", line 473, in _handle_shopping_list
+    ha_data = {'name': normalize_entity(entity)}
+NameError: name 'normalize_entity' is not defined
+2023-01-12 23:02:02.384 | INFO     |  4416 | HomeAssistantSkill | Dialog
+2023-01-12 23:02:12.692 | INFO     |  4416 | HomeAssistantSkill | Dialog
+2023-01-12 23:02:13.069 | INFO     |  4416 | __main__:on_stopping:193 | Skills service is shutting down...
+2023-01-12 23:02:13.069 | INFO     |  4416 | __main__:shutdown:284 | Shutting down Skills service
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib control.c:1528:(snd_ctl_open_noupdate) Invalid CTL default
+ALSA lib confmisc.c:855:(parse_card) cannot find card '0'
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_card_inum returned error: No such file or directory
+ALSA lib confmisc.c:422:(snd_func_concat) error evaluating strings
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_concat returned error: No such file or directory
+ALSA lib confmisc.c:1334:(snd_func_refer) error evaluating name
+ALSA lib conf.c:5178:(_snd_config_evaluate) function snd_func_refer returned error: No such file or directory
+ALSA lib conf.c:5701:(snd_config_expand) Evaluate error: No such file or directory
+ALSA lib control.c:1528:(snd_ctl_open_noupdate) Invalid CTL default
+2023-01-12 23:02:13.548 | ERROR    |  4416 | VolumeSkill | Couldn't allocate mixer, ALSAAudioError('No such file or directory [default]')
+2023-01-12 23:02:13.549 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-volume.mycroftai/settings.json
+2023-01-12 23:02:13.559 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-wiki.mycroftai/settings.json
+2023-01-12 23:02:13.573 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-configuration.mycroftai/settings.json
+2023-01-12 23:02:13.581 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-stop.mycroftai/settings.json
+2023-01-12 23:02:13.587 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-reminder.mycroftai/settings.json
+2023-01-12 23:02:13.596 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-ip.mycroftai/settings.json
+2023-01-12 23:02:13.602 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-alarm.mycroftai/settings.json
+2023-01-12 23:02:13.617 | INFO     |  4416 | UnknownSkill | Removing all handlers...
+2023-01-12 23:02:13.618 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/fallback-unknown.mycroftai/settings.json
+2023-01-12 23:02:13.619 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-singing.mycroftai/settings.json
+2023-01-12 23:02:13.626 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-version-checker.mycroftai/settings.json
+2023-01-12 23:02:13.637 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-playback-control.mycroftai/settings.json
+2023-01-12 23:02:14.638 | INFO     |  4416 | Playback Control Skill | Audio service status: {}
+2023-01-12 23:02:15.638 | WARNING  |  4416 | mycroft.skills.skill_manager:_shutdown_skill:106 | mycroft-playback-control.mycroftai shutdown took 2.0016012050000427 seconds
+2023-01-12 23:02:15.639 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-spelling.mycroftai/settings.json
+2023-01-12 23:02:15.640 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-speak.mycroftai/settings.json
+2023-01-12 23:02:15.641 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-hello-world.mycroftai/settings.json
+2023-01-12 23:02:15.643 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-installer.mycroftai/settings.json
+2023-01-12 23:02:15.644 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-naptime.mycroftai/settings.json
+2023-01-12 23:02:15.650 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-npr-news.mycroftai/settings.json
+2023-01-12 23:02:15.656 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-audio-record.mycroftai/settings.json
+2023-01-12 23:02:15.666 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-date-time.mycroftai/settings.json
+2023-01-12 23:02:15.676 | INFO     |  4416 | HomeAssistantSkill | Removing all handlers...
+2023-01-12 23:02:15.677 | WARNING  |  4416 | mycroft.skills.fallback_skill:remove_fallback:185 | Could not find matching fallback handler
+2023-01-12 23:02:15.681 | INFO     |  4416 | QuestionsAnswersSkill | Removing all handlers...
+2023-01-12 23:02:15.682 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-joke.mycroftai/settings.json
+2023-01-12 23:02:15.683 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-support-helper.mycroftai/settings.json
+2023-01-12 23:02:15.688 | INFO     |  4416 | mycroft.skills.settings:save_settings:116 | Skill settings successfully saved to /home/runner/.config/mycroft/skills/mycroft-personal.mycroftai/settings.json
+2023-01-12 23:02:15.690 | INFO     |  4416 | __main__:shutdown:291 | Skills service shutdown complete!
+2023-01-12 23:02:15.690 | ERROR    |  4416 | websocket | error from callback <bound method MessageBusClient.on_message of <mycroft.messagebus.client.client.MessageBusClient object at 0x7f3baffb3b10>>: cannot schedule new futures after shutdown
+2023-01-12 23:02:15.690 | ERROR    |  4416 | mycroft_bus_client.client.client | === RuntimeError('cannot schedule new futures after shutdown') ===
+Traceback (most recent call last):
+  File "/opt/mycroft-core/.venv/lib/python3.7/site-packages/websocket/_app.py", line 407, in _callback
+    callback(self, *args)
+  File "/opt/mycroft-core/.venv/lib/python3.7/site-packages/mycroft_bus_client/client/client.py", line 182, in on_message
+    self.emitter.emit('message', message)
+  File "/opt/mycroft-core/.venv/lib/python3.7/site-packages/pyee/_base.py", line 113, in emit
+    handled = self._call_handlers(event, args, kwargs)
+  File "/opt/mycroft-core/.venv/lib/python3.7/site-packages/pyee/_base.py", line 96, in _call_handlers
+    self._emit_run(f, args, kwargs)
+  File "/opt/mycroft-core/.venv/lib/python3.7/site-packages/pyee/_executor.py", line 50, in _emit_run
+    future = self._executor.submit(f, *args, **kwargs)
+  File "/opt/hostedtoolcache/Python/3.7.15/x64/lib/python3.7/concurrent/futures/thread.py", line 163, in submit
+    raise RuntimeError('cannot schedule new futures after shutdown')
+RuntimeError: cannot schedule new futures after shutdown
+2023-01-12 23:02:15.691 | ERROR    |  4416 | mycroft_bus_client.client.client | Exception closing websocket: RuntimeError('cannot schedule new futures after shutdown')
+2023-01-12 23:02:15.691 | WARNING  |  4416 | mycroft_bus_client.client.client | Message Bus Client will reconnect in 5.0 seconds.
