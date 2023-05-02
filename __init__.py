@@ -160,7 +160,7 @@ class HomeAssistantSkill(FallbackSkill):
         """
         self._setup()
         if self.ha_client is None:
-            self._speak_dialog('homeassistant.error.setup')
+            self._speak_dialog('homeassistant.error.offline')
             return False
         # TODO if entity is 'all', 'any' or 'every' turn on
         # every single entity not the whole group
@@ -830,7 +830,7 @@ class HomeAssistantSkill(FallbackSkill):
             return False
         self._setup()
         if self.ha_client is None:
-            self._speak_dialog('homeassistant.error.setup')
+            self._speak_dialog('homeassistant.error.offline')
             return False
         # pass message to HA-server
         response = self._handle_client_exception(
